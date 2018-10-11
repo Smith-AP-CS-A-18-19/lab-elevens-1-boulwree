@@ -75,6 +75,10 @@ public class Card {
 	 */
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		/* I would rather you call the methods, in the
+		 * spirit of these being private variables,
+		 * but this works
+		 */
 		if (suit == otherCard.suit && pointValue == otherCard.pointValue && rank == otherCard.rank){
 			return true;
 		}else{
@@ -96,6 +100,9 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		/* This is not the exact String that is supposed
+		 * to be returned. See the lab for the format
+		 */
 		return "The rank is " + rank + " The suit is " + suit + " The pointValue is " + pointValue;
 
 	}
